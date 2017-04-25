@@ -1,36 +1,25 @@
-<html>
+<!DOCTYPE html>
 <head>
 <title>Welcome to your dream house</title>
     <style>
-    body {
+    body {background-color: burlywood;
     text-align:center;
-    margin-top: 10%;
-    background-image: url("image.jpg");
-    }
-input{
-    
-    background: burlywood;
-    width: 150px;
-    height: 50px;
-    }
-.div1 {
-    background-color: antiquewhite;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 15%;
     }
     </style>
+    <script type="text/javascript" src="load_message.js"></script>
 </head>
 <body>
-<div class="div1">
     <h1>Welcome to your dream house!</h1>
-    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVXIWvvSSrzV3iEc9yjldZ7uE5NO4valZ5gamuy8nTMwG7REVMMA" alt="house construct" style="width:300px;height:300px;">
-    <h3>Suplier login</h3>
+    <h2>Suplier login</h2>
     <form action="login.php" method="post">
-    <p>E-mail: <input type="text" name= "email" size="20" maxlength="50" placeholder="email@example.com" /></p>
-    <p>Password:<input type="password" name="password" maxlength="50" placeholder="password"/></p>
-    </form>
-    <a href="suplier_process.html"><input type="submit" class="btn btn-info" value="Submit"></a>
-    </div>
+    <h3>E-mail:<h3>
+    <input type="text" name= "email" size="20" maxlength="50" placeholder="email@example.com"/>
+    <h3>Password:</h3>
+    <input type="password" name="password" maxlength="50" placeholder="password"/>
+    </form><br/>
+    
+        <a href="suplier_process.html"><input type="submit" class="btn btn-info" value="submit"
+                                                     onclick = "load_message(3)" /></a>
+        
 </body>
 </html>
